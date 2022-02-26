@@ -1,12 +1,13 @@
 
 
-let toggle = document.getElementsByClassName("toggle-btn")[0];
-let collapse = document.getElementsByClassName("collapse")[0];
+window.onload = function execute() {
 
-console.log(collapse);
-function switchClass(event)
-{
-    console.log('button clicked');
-    collapse.classList.toggle('active');
+    let toggle = document.getElementsByClassName("toggle-btn")[0];
+    let collapse = document.getElementsByClassName("collapse")[0];
+
+    console.log(collapse);
+    function switchClass(event) {
+        collapse.classList.toggle('active');
+    }
+    toggle.addEventListener('click', switchClass);
 }
-toggle.addEventListener('click',switchClass);
