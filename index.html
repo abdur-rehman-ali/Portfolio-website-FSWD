@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
+    <!-- icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.0/font/bootstrap-icons.min.css"
+      integrity="sha512-yLNTU6YQWEtsM/WVkUqd2jRzzq5hmfFUMVvziVlkgC0R9HTElDtyF4DiWiBeMS36npvN+NWwrr764A4AWGcmQQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./style/style.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- NAVBAR START  -->
-    <nav class="nav flex border">
-        <div class="nav-items border w_30">
-            <h1>AB</h1>
-        </div>
-        <div class="nav-items border w_70">
-            <ul class="flex border">
-                <li><a href="#">Home</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Experience</a></li>
-                <li><a href="">Contact me</a></li>
-            </ul>
+    <header class="border container-fluid">
+      <nav id="nav" class="flex font-poppins w-100 flex-column">
+        <div class="nav-brand border">
+          <a href="#" class="text-dark text-lg font-bold border ">ABD</a>
         </div>
 
-    </nav>
-</body>
+        <div class="toggle-btn border">
+          <button class="btn">
+            <i class="bi bi-filter-right"></i>
+          </button>
+        </div>
 
+        <div class="collapse flex-grow border">
+          <ul class="flex flex-column text-center">
+            <li><a href="#" class="link">Home</a></li>
+            <li><a href="#" class="link">About</a></li>
+            <li><a href="#" class="link">Skills</a></li>
+            <li><a href="#" class="link">Projects</a></li>
+          </ul>
+        </div>
+
+        <div class="flex-initial border">
+          <div class="flex">
+            <button
+              class="btn btn-primary btn-shadow bg-gradient text-white text-uppercase font-bold"
+            >
+              Connect
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>

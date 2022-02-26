@@ -297,4 +297,58 @@ ul{
     width: 50%;
 }
 
+.border
+{
+    border: 0px solid black;
+}
+
 /* xxxxxxxxxxxxxxxxx Global classes xxxxxxxxxxxxxxxxx */
+
+/* --------------Navigation -------------------- */
+#nav
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--text-light);
+}
+
+#nav .nav-brand
+{
+    margin-top: -1rem;
+    margin-left: 1rem;
+}
+
+#nav .collapse
+{
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.9s ease;
+}
+
+#nav .collapse ul > li
+{
+    padding: 0 1.5rem;
+    line-height: 3rem;
+    font-size: 1.1rem;
+}
+
+#nav .toggle-btn .btn
+{
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: var(--text-dark2);
+    padding: 1rem;
+
+}
+
+#nav .flex-initial .flex button
+{
+    display: none;
+}
+
+
+/* ------------------- /Navigation Style ------------------------ */
