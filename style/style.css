@@ -316,7 +316,7 @@ ul{
 
 #nav .nav-brand
 {
-    margin-top: -1rem;
+    margin-top: -0.7rem;
     margin-left: 1rem;
 }
 
@@ -341,13 +341,18 @@ ul{
     top: 0;
     right: 0;
     color: var(--text-dark2);
-    padding: 1rem;
+    padding: 1.5rem;
 
 }
 
 #nav .flex-initial .flex button
 {
     display: none;
+}
+
+.active
+{
+    max-height: 50vh !important;
 }
 
 
