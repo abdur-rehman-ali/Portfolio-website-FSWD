@@ -1,446 +1,379 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 /* ------------------- Variables ------------------------ */
 
-:root{
-    /* text colors */
-    --text-gray : #808291;
-    --text-white: #f8f9fa;
-    --text-light: #f6f6f6;
-    --text-dark : #1A3260;
-    --text-dark2 : #1A3760D4;
-    --text-red : #ff4d6d;
-    --box-shadow: 0px 0px 50px 0px rgb(0 0 0 / 10%);
-    --bg-blue: rgb(249, 243, 255);
-    --bg-red: rgb(254, 247, 252);
-    --bg-yellow:rgb(255, 255, 246);
-    --bg-purple: rgb(246, 255, 255);
+:root {
+  /* text colors */
+  --text-gray: #808291;
+  --text-white: #f8f9fa;
+  --text-light: #f6f6f6;
+  --text-dark: #1a3260;
+  --text-dark2: #1a3760d4;
+  --text-red: #ff4d6d;
+  --box-shadow: 0px 0px 50px 0px rgb(0 0 0 / 10%);
+  --bg-blue: rgb(249, 243, 255);
+  --bg-red: rgb(254, 247, 252);
+  --bg-yellow: rgb(255, 255, 246);
+  --bg-purple: rgb(246, 255, 255);
 
-    /* font familiy */
-    --font-poppins : "Poppins", 'sans-serif';
+  /* font familiy */
+  --font-poppins: "Poppins", "sans-serif";
 
-    /* gradient colors */
-    --bg-gradient : linear-gradient(to right, #ff512f, #dd2476); 
-    --bg-gradient-indigo: linear-gradient(to right, #8e2de2, #4a00e0);
-    --bg-gradient-peach: linear-gradient(to right, #fff7f3, #fff7f3);
+  /* gradient colors */
+  --bg-gradient: linear-gradient(to right, #ff512f, #dd2476);
+  --bg-gradient-indigo: linear-gradient(to right, #8e2de2, #4a00e0);
+  --bg-gradient-peach: linear-gradient(to right, #fff7f3, #fff7f3);
 
-    /* images */
-    --bg-profile : url('./assets/imgs/bg.jpg');
-
-    
+  /* images */
+  --bg-profile: url("./assets/imgs/bg.jpg");
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-ul{
-    list-style-type: none;
+ul {
+  list-style-type: none;
 }
-
 
 /* xxxxxxxxxxxxxxxxx Variables xxxxxxxxxxxxxxxxx */
 
 /* --------------Global classes -------------------- */
 
-.text-dark
-{
-    color: var(--text-dark);
+.text-dark {
+  color: var(--text-dark);
 }
 
-.text-grey
-{
-    color: var(--text-gray);
+.text-grey {
+  color: var(--text-gray);
 }
 
-.text-red
-{
-    color: var(--text-red);
+.text-red {
+  color: var(--text-red);
 }
 
-.text-light
-{
-    color: var(--text-light);
+.text-light {
+  color: var(--text-light);
 }
 
-.text-white
-{
-    color: var(--text-white);
+.text-white {
+  color: var(--text-white);
 }
 
-.text-center
-{
-    text-align: center;
+.text-center {
+  text-align: center;
 }
 
-.text-sm
-{
-    font-size: 1em;
-    line-height: 1.5em;
+.text-sm {
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
-.text-md
-{
-    font-size: 1.5em;
+.text-md {
+  font-size: 1.5em;
 }
 
-.text-lg
-{
-    font-size: 2.2em;
-    line-height: 3em;
+.text-lg {
+  font-size: 2.2em;
+  line-height: 3em;
 }
 
-.text-xl
-{
-    font-size: 3em;
+.text-xl {
+  font-size: 3em;
 }
 
-.text-2xl
-{
-    font-size: 5em;
+.text-2xl {
+  font-size: 5em;
 }
 
-.text-uppercase
-{
-    text-transform: uppercase;
+.text-uppercase {
+  text-transform: uppercase;
 }
 
-.font-poppins
-{
-    font-family: var(--font-poppins);
+.font-poppins {
+  font-family: var(--font-poppins);
 }
 
-.font-bold
-{
-    font-weight: bold;
+.font-bold {
+  font-weight: bold;
 }
 
-.bg-gradient
-{
-    background: var(--bg-gradient);
+.bg-gradient {
+  background: var(--bg-gradient);
 }
 
-.bg-gradient-indigo
-{
-    background: var(--bg-gradient-indigo);
+.bg-gradient-indigo {
+  background: var(--bg-gradient-indigo);
 }
 
-.bg-gradient-peach
-{
-    background: var(--bg-gradient-peach);
+.bg-gradient-peach {
+  background: var(--bg-gradient-peach);
 }
 
-.bg-red
-{
-    background: var(--bg-red);
+.bg-red {
+  background: var(--bg-red);
 }
 
-.bg-blue
-{
-    background: var(--bg-blue);
+.bg-blue {
+  background: var(--bg-blue);
 }
 
-.bg-yellow
-{
-    background: var(--bg-yellow);
+.bg-yellow {
+  background: var(--bg-yellow);
 }
 
-.bg-purple
-{
-    background: var(--bg-purple);
+.bg-purple {
+  background: var(--bg-purple);
 }
 
-.flex
-{
-    display: flex;
+.flex {
+  display: flex;
 }
 
-.flex-row
-{
-    flex-direction: row;
+.flex-row {
+  flex-direction: row;
 }
 
-.flex-column
-{
-    flex-direction: column;
+.flex-column {
+  flex-direction: column;
 }
 
-.flex-wrap
-{
-    flex-wrap: wrap;
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
-.flex-initial
-{
-    flex:0 1 auto;
+.flex-initial {
+  flex: 0 1 auto;
 }
 
-.justify-center
-{
-    justify-content: center;
+.justify-center {
+  justify-content: center;
 }
 
-.mx-auto
-{
-    margin-left: auto;
-    margin-right: auto;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.py-2
-{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.py-2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.py-5
-{
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+.py-5 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
-.py-10
-{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+.py-10 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-.px-5
-{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+.px-5 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-.px-10
-{
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+.px-10 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
-.container
-{
-    width: 100%;
+.container {
+  width: 100%;
 }
 
-.container-fluid
-{
-    width: 98%;
+.container-fluid {
+  width: 98%;
 }
 
-.link
-{
-    color: var(--text-dark2);
-    font-weight: bold;
+.link {
+  color: var(--text-dark2);
+  font-weight: bold;
 }
 
-.link:hover
-{
-    color: var(--text-red);
+.link:hover {
+  color: var(--text-red);
 }
 
-.btn
-{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-.btn-primary
-{
-    padding: .8rem 2rem;
-    border-radius: 50px;
-    font-family: var(--font-poppins);
-    font-weight: bold;
+.btn-primary {
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-family: var(--font-poppins);
+  font-weight: bold;
 }
 
-.btn-primary:hover
-{
-    background: var(--bg-gradient-indigo);
+.btn-primary:hover {
+  background: var(--bg-gradient-indigo);
 }
 
-.btn-shadow
-{
-    box-shadow: var(--box-shadow);
+.btn-shadow {
+  box-shadow: var(--box-shadow);
 }
 
-.d-inline
-{
-    display: inline-block;
+.d-inline {
+  display: inline-block;
 }
 
-.d-block
-{
-    display: block;
+.d-block {
+  display: block;
 }
 
-.grid
-{
-    display: grid;
+.grid {
+  display: grid;
 }
 
-.cols-1
-{
-    grid-template-columns: repeat(1,minmax(0,1fr));
+.cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.w-100
-{
-    width: 100%;
+.w-100 {
+  width: 100%;
 }
 
-.w-50
-{
-    width: 50%;
+.w-50 {
+  width: 50%;
 }
 
-.w-80
-{
-    width: 80%;
+.w-80 {
+  width: 80%;
 }
 
-.border
-{
-    border: 0px solid black;
+.border {
+  border: 1px solid black;
 }
+
 
 /* xxxxxxxxxxxxxxxxx Global classes xxxxxxxxxxxxxxxxx */
 
-
 /* --------------Media query -------------------- */
 
-@media (min-width:1024px) {
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
 
-    .container{
-        max-width: 1024px;
-    }
+  #nav .toggle-btn {
+    display: none;
+  }
 
-    #nav .toggle-btn
-    {
-        display: none;
-    }
-    
-    #nav{
-        flex-direction: row !important;
-        justify-content: space-between;
-    }
+  #nav {
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
 
-    .collapse{
-        max-height: 10vh !important;
-        padding:1rem 10rem;
-       
-     
-    }
+  .collapse {
+    max-height: 10vh !important;
+    padding: 1rem 10rem;
+  }
 
-    .collapse ul{
-        flex-direction: row !important;
-    }
+  .collapse ul {
+    flex-direction: row !important;
+  }
 
-    .active{
-        max-height: 100% !important;
-    }
+  .active {
+    max-height: 100% !important;
+  }
 
-    #banner
-    {
-        display: flex;
-        flex-direction: row-reverse;
-        padding-top: 6rem;
-    }
+  #banner {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 6rem;
+  }
 
-    #banner .banner-left
-    {
-        margin-top: 5rem;
-    }
+  #banner .banner-left {
+    margin-top: 5rem;
+  }
 }
-
 
 /* xxxxxxxxxxxxxxxxx Media Query xxxxxxxxxxxxxxxxx */
 
-
-
 /* --------------Navigation -------------------- */
-#nav
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: var(--text-light);
+#nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--text-light);
 }
 
-#nav .nav-brand
-{
-    margin-top: -0.7rem;
-    margin-left: 1rem;
+#nav .nav-brand {
+  margin-top: -0.7rem;
+  margin-left: 1rem;
 }
 
-#nav .collapse
-{
-    max-height: 0px;
-    overflow: hidden;
-    transition: all 0.9s ease;
+#nav .collapse {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 0.9s ease;
 }
 
-#nav .collapse ul > li
-{
-    padding: 0 1.5rem;
-    line-height: 3rem;
-    font-size: 1.1rem;
+#nav .collapse ul > li {
+  padding: 0 1.5rem;
+  line-height: 3rem;
+  font-size: 1.1rem;
 }
 
-#nav .toggle-btn .btn
-{
-    font-size: 2em;
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: var(--text-dark2);
-    padding: 1.5rem;
-
+#nav .toggle-btn .btn {
+  font-size: 2em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--text-dark2);
+  padding: 1.5rem;
 }
 
-#nav .flex-initial .flex button
-{
-    display: none;
+#nav .flex-initial .flex button {
+  display: none;
 }
 
-.active
-{
-    max-height: 50vh !important;
+.active {
+  max-height: 50vh !important;
+  z-index: 1;
 }
-
 
 /* ------------------- /Navigation ------------------------ */
 /* ------------------- /Banner  ------------------------ */
 
-#banner
-{
-    position: relative;
-    height: 90vh;
-    top: 15vh;
-
+#banner {
+  position: relative;
+  height: 90vh;
+  top: 40vh;
 }
 
-#banner .banner-right img
-{
-    height: 350px;
-    border-radius:50% ;
+#banner .banner-right img {
+  height: 350px;
+  border-radius: 50%;
 }
 
-#banner .banner-left
-{
-    padding-left: 1rem;
-    padding-top: 1rem;
-
+#banner .banner-left {
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 
 /* ------------------- Banner area Style ------------------------ */
 
-
-
-
 /* ------------------- /Banner area Style ------------------------ */
+
+
+#skills
+{
+    margin-top: 12rem;
+}
+#skills > h1
+{
+    font-size: xx-large;
+}
