@@ -253,7 +253,7 @@ ul {
 }
 
 .border {
-  border: 1px solid black;
+  border: 0px solid black;
 }
 
 
@@ -291,12 +291,24 @@ ul {
   #banner {
     display: flex;
     flex-direction: row-reverse;
-    padding-top: 6rem;
+    padding-top: 0rem;
   }
 
   #banner .banner-left {
     margin-top: 5rem;
   }
+
+  .project-list
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .lg-w30
+  {
+    width: 30%;
+  }
+
 }
 
 /* xxxxxxxxxxxxxxxxx Media Query xxxxxxxxxxxxxxxxx */
@@ -364,16 +376,31 @@ ul {
   padding-top: 1rem;
 }
 
-/* ------------------- Banner area Style ------------------------ */
-
-/* ------------------- /Banner area Style ------------------------ */
-
+/* ------------------- skills Style ------------------------ */
 
 #skills
 {
     margin-top: 12rem;
 }
 #skills > h1
+{
+    font-size: xx-large;
+}
+/* ------------------- skills Style end------------------------ */
+
+
+/* ------------------- project style------------------------ */
+
+#projects
+{
+  padding-top: 5rem;
+}
+
+#projects .project-list .project img
+{
+  height: 200px;
+} 
+#projects > h1
 {
     font-size: xx-large;
 }
