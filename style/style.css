@@ -404,3 +404,9 @@ ul {
 {
     font-size: xx-large;
 }
+
+#footer
+{
+  background-color: var(--text-dark);
+  min-height: 5vh;
+}
